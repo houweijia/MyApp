@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<!--    <com.otaliastudios.cameraview.CameraView-->
+<!--        android:id="@+id/camera1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:keepScreenOn="true"-->
+<!--        app:cameraExperimental="true"-->
+<!--        app:cameraEngine="camera2"-->
+<!--        app:cameraPreview="glSurface"-->
+<!--        app:cameraPlaySounds="true"-->
+<!--        app:cameraGrid="off"-->
+<!--        app:cameraFlash="auto"-->
+<!--        app:cameraAudio="on"-->
+<!--        app:cameraFacing="back"-->
+<!--        app:cameraGestureTap="autoFocus"-->
+<!--        app:cameraGestureLongTap="none"-->
+<!--        app:cameraGesturePinch="zoom"-->
+<!--        app:cameraGestureScrollHorizontal="filterControl1"-->
+<!--        app:cameraGestureScrollVertical="exposureCorrection"-->
+<!--        app:cameraMode="picture"-->
+<!--        app:cameraAutoFocusMarker="@string/cameraview_default_autofocus_marker">-->
+
+<!--        &lt;!&ndash; Watermark! &ndash;&gt;-->
+
+
+<!--    </com.otaliastudios.cameraview.CameraView>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_gravity="bottom|center_horizontal"-->
+<!--        android:src="@drawable/page_ic_search"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:text="是佛is你哦呃逆欧威欧内欧文范围内非窝囊废IEon我ionizer"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="是佛is你哦呃逆欧威欧内欧文范围内非窝囊废IEon我ionizer"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:text="是佛is你哦呃"/>
+    </LinearLayout>
+</FrameLayout>

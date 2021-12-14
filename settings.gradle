@@ -1,0 +1,50 @@
+include ':mylibrary'
+include ':lib'
+include ':app'
+rootProject.name = "MyApp"
+
+gradle.addBuildListener(new BuildListener() {
+    @Override
+    void buildStarted(Gradle gradle) {
+        println '开始构建'
+    }
+
+    @Override
+    void settingsEvaluated(Settings settings) {
+        println 'settings 评估完成（settings.gradle 中代码执行完毕）'
+    }
+
+    @Override
+    void projectsLoaded(Gradle gradle) {
+        println '项目结构加载完成（初始化阶段结束）'
+        println '初始化结束，可访问根项目：' + gradle.gradle.rootProject
+    }
+
+    @Override
+    void projectsEvaluated(Gradle gradle) {
+        println '所有项目评估完成（配置阶段结束）'
+    }
+
+    @Override
+    void buildFinished(BuildResult result) {
+        println '构建结束 '
+    }
+})
+
+boolean useSpeechMoudle = false
+
+if (useSpeechMoudle) {
+    // 导入其它 App 的 speech 语音模块
+    include "speech"
+    project(":speech").projectDir = new File("../OtherApp/speech")
+}
+
+gradle.getTaskGraph().addTaskExecutionGraphListener(new
+        TaskExecutionGraphListener() {
+            @Override
+            void graphPopulated(TaskExecutionGraph graph) {
+                println 'graphPopulated '
+            }
+        })
+
+
